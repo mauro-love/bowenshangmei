@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS reset */
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+h1,h2,h3,h4,h5,h6,strong,b{
+	font-weight:100;
+}
+i,em{
+	font-style:normal;
+}
+body,html{
+	width:100%;
+	height:100%;
+}
+/*header开始*/
+#header-w{
+	width:100%;
+	height:105px;
+	background:#f1f1f1;
+}
+.header{
+	width:1008px;
+	height:78px;
+	margin:0 auto;
+	background:#f1f1f1;
+	padding-top:27px;
+}
+.header h1{
+	width:265px;
+	height:57px;
+	margin-left:3px;
+	background:url(../images/xdjy_01_03.gif) no-repeat;
+	float:left;
+}
+.header h1 a{
+	display:block;
+	width:265px;
+	height:57px;
+	text-indent:-999px;
+}
+.header-r{
+	width:214px;
+	height:72px;
+	background: url(../images/xdjy_01_06.gif) no-repeat;
+	float:right;
+	text-align:right;
+	padding-right:3px;
+}
+.header-r strong{
+	color:#fe3000;
+	font-size:18px;
+	font-weight:900;
+}
+.header-r p{
+	font-size:14px;
+	color:#333333;
+}
+/*nav开始*/
+#nav-w{
+	width:100%;
+	height:40px;
+	background:#333333;
+}
+.nav{
+	width:1008px;
+	height:40px;
+	margin:0 auto;
+	background:#333333;
+}
+.nav ul{
+	width:1008px;
+	height:40px;
+}
+.nav ul li{
+	float:left;
+}
+.nav ul li a{
+	line-height:40px;
+	display:block;
+	height:39px;
+	color:#fff;
+	padding:0 25px;
+}
+.nav ul li a:hover{
+	height:40px;
+	background:#ec6c00;
+}

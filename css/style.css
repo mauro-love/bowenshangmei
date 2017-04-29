@@ -55,6 +55,7 @@ i,em{
 	padding:0 25px;
 	font-size:14px;
 	color:#000;
+	float:left;
 }
 .nav li a:hover{
 	background:#66c5b4;
@@ -127,6 +128,7 @@ i,em{
 	font-weight:900;
 	background:url(../images/icons.png) no-repeat;
 	background-position:349px -453px;
+	overfolw:hidden;
 	margin-top:55px;
 	font-size:20px;
 	margin-bottom:5px;

@@ -101,13 +101,79 @@
 #banner-wrapper{
 	width: 100%;
 	height:644px;
-	background:url(../images/banner-bg.jpg) repeat;
+	background:url(../images/czym_ddd.png) repeat;
+	background-size: 100% 100%;
 }
 .banner{
 	width:1000px;
-	height:644px;
+	height:645px;
 	margin:0 auto;
-	background:url(../images/banner-inner.jpg) no-repeat;
+	position: relative;
+}
+.banner span:nth-of-type(1){
+	width:360px;
+	height: 40px;
+	background:url(../images/bn-html5.png) no-repeat;
+	position: absolute;
+	margin-left: 50%;
+	top: 56px;
+	left: -500px;
+	animation: html01 1s linear forwards;
+}
+.banner span:nth-of-type(2){
+	width:250px;
+	height: 25px;
+	background:url(../images/bn-wz.png) no-repeat;
+	position: absolute;
+	margin-left: 50%;
+	top: 110px;
+	left: 225px;
+	animation: html02 1s linear forwards;
+	
+}
+.banner span:nth-of-type(3){
+	width:413px;
+	height: 56px;
+	background:url(../images/bn-xys.png) no-repeat;
+	position: absolute;
+	margin-left: 50%;
+	top: 158px;
+	left: 306.5px;
+	animation: html03 1s linear forwards;
+	
+}
+.banner span:nth-of-type(4){
+	width:95px;
+	height: 58px;
+	background:url(../images/bn-pcpd.png) no-repeat;
+	position: absolute;
+	top: 158px;
+	left: -75px;
+	transform: rotateY(360deg);
+	animation: html04 1s linear forwards;
+	
+}
+.banner span:nth-of-type(5){
+	width:55px;
+	height: 55px;
+	background:url(../images/czym_aaa.png) no-repeat;
+	position: absolute;
+	margin-left: 50%;
+	top: 247px;
+	left: -227.5px;
+	animation: html05 1s linear forwards;
+	
+}
+.banner span:nth-of-type(6){
+	width:479px;
+	height: 297px;
+	background:url(../images/czyu_ccc.png) no-repeat;
+	position: absolute;
+	margin-left: 50%;
+	bottom: -300px;
+	left: -239.5px;
+	transform: scale(0.1,0.1);
+	animation: html06 1s linear forwards;	
 }
 /*main 开始*/
 .main-a-wrapper{
@@ -208,11 +274,18 @@
 	background:url(../images/web-pcbg.png) no-repeat;
 	margin-bottom: 25px;
 }
+.main-w-m ul li span{
+	display: block;
+	width: 238px;
+	height:166px;
+	margin:7px 0px 0px 22px;		
+	overflow: hidden;
+}
 .main-w-m ul li a{
 	display: block;
 	width:238px;
 	height:166px;
-	margin:7px 0px 0px 22px;	
+	transition: all 1s;
 }
 .main-w-m ul li:nth-of-type(1) a{
 	background:url(../images/web-01.png) no-repeat;
@@ -237,6 +310,9 @@
 .main-w-m ul li:nth-of-type(6) a{
 	background:url(../images/web-06.png) no-repeat;
 	
+}
+.main-w-m ul li a:hover{
+	transform: scale(1.1,1.1);
 }
 .main-w-b{
 	width:1000px;
@@ -286,8 +362,33 @@
 	height:408px;
 	margin:0px 27px;
 	background:url(../images/ui-phone.png) no-repeat;
+	overflow: hidden;
+	position: relative;
 }
 .main-u-m ul li a{
+	display: block;
+	width: 179px;
+	height: 309px;
+	position: absolute;
+	top: 48px;
+	left: 8px;
+	overflow: hidden;
+}
+.main-u-m ul li span{
+	display: block;
+	width: 1253px;
+	height: 309px;
+	overflow: hidden;
+	position: absolute;
+	animation: ui 10s linear infinite;
+}
+.main-u-m ul li span img{
+	display: block;
+	width: 179px;
+	height: 309px;
+	float: left;
+}
+/*.main-u-m ul li a{
 	display: block;
 	width:179px;
 	height:309px;
@@ -308,7 +409,7 @@
 .main-u-m ul li:nth-of-type(4) a{
 	background:url(../images/ui04.jpg) no-repeat;
 	background-size: 100% 100%;
-}
+}*/
 .main-u-b{
 	width:1000px;
 	height:479px;
@@ -355,7 +456,7 @@
 	width:122px;
 	height:142px;
 }
-.main-p-b ul li:nth-of-type(1) a{
+/*.main-p-b ul li:nth-of-type(1) a{
 	background:url(../images/ic01.png) no-repeat;
 }
 .main-p-b ul li:nth-of-type(2) a{
@@ -399,6 +500,9 @@
 }
 .main-p-b ul li:nth-of-type(15) a{
 	background:url(../images/ic15.png) no-repeat;
+}*/
+.main-p-b a:hover img{
+	animation: phone 0.25s linear infinite alternate;
 }
 .main-s-wrapper{
 	width:100%;
@@ -442,7 +546,7 @@
 	display: block;
 	width:117px;
 	height:117px;
-	
+	position: absolute;
 }
 .main-s-b dl:nth-of-type(1) dt a{
 	background:url(../images/skill-bgj.png) no-repeat 8px 8px;
@@ -462,27 +566,28 @@
 .main-s-b dl:nth-of-type(6) dt a{
 	background:url(../images/skill-bgj.png) no-repeat -678px 8px;
 }
-.main-s-b dl dt a span{
+.main-s-b dl dt span{
 	display: block;
 	width:117px;
 	height:117px;
+	animation: score 1s linear infinite;
 }
-.main-s-b dl:nth-of-type(1) dt a span{
+.main-s-b dl:nth-of-type(1) dt span{
 	background:url(../images/skill-bgj.png) no-repeat 2px -168px;
 }
-.main-s-b dl:nth-of-type(2) dt a span{
+.main-s-b dl:nth-of-type(2) dt span{
 	background:url(../images/skill-bgj.png) no-repeat -135px -168px;
 }
-.main-s-b dl:nth-of-type(3) dt a span{
+.main-s-b dl:nth-of-type(3) dt span{
 	background:url(../images/skill-bgj.png) no-repeat -248px -168px;
 }
-.main-s-b dl:nth-of-type(4) dt a span{
+.main-s-b dl:nth-of-type(4) dt span{
 	background:url(../images/skill-bgj.png) no-repeat -385px -171px;
 }
-.main-s-b dl:nth-of-type(5) dt a span{
+.main-s-b dl:nth-of-type(5) dt span{
 	background:url(../images/skill-bgj.png) no-repeat -531px -169px;
 }
-.main-s-b dl:nth-of-type(6) dt a span{
+.main-s-b dl:nth-of-type(6) dt span{
 	background:url(../images/skill-bgj.png) no-repeat -686px -171px;
 }
 .main-s-b dl dd{
@@ -568,4 +673,47 @@
 	margin:0 auto;
 	margin-bottom: 25px;
 	background:url(../images/foot-email.png) no-repeat;
+}
+@keyframes html01{
+	100%{ left: -180px;}
+}
+@keyframes html02{
+	100%{ left: -125px;}
+}
+@keyframes html03{
+	100%{ left: -206.5px;}
+}
+@keyframes html04{
+	100%{ left: 170px; transform: rotateY(0deg);}
+}
+@keyframes html05{
+	100%{ left: -27.5px;}
+}
+@keyframes html06{
+	100%{ bottom: 0px; transform: scale(1,1);}
+}
+@keyframes ui{
+	0%{ left: 0;}
+	10%{left:-179px;}
+	16.66%{left:-179px;}
+	26.66%{left:-358px;}
+	33.32%{left:-358px;}
+	43.32%{left:-537px;}
+	49.98%{left:-537px;}
+	59.98%{left:-716px;}
+	66.64%{left:-716px;}
+	76.64%{left:-895px;}
+	83.3%{left:-895px;}
+	93.3%{left:-1074px;}
+	100%{left:-1074px;}
+}
+@keyframes phone{
+	0%{transform: rotate(-5deg);}
+	50%{transform: rotate(0deg);}
+	100%{transform: rotate(5deg);}
+}
+@keyframes score{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+
 }

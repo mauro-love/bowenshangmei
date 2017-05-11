@@ -1,0 +1,259 @@
+@charset "utf-8";
+body{
+	padding-bottom: 15.3vw;
+}
+#header{
+	width:100vw;
+	height:45.3vw;
+	background:#ff5000;
+	display: flex;
+	justify-content: space-between;
+	padding:2vw 3.9vw 0 3.9vw;
+	box-sizing: border-box;
+	border-radius:0px 0px 400px 400px/0px 0px 45px 45px;
+}
+#header a{
+	font-size: 4.37vw;
+	color: #fff;
+}
+#header .header-m{
+	width:29.6vw;
+	height:43.3vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 4.3vw;
+}
+.photo{
+	width:15.6vw;
+	height:15.6vw;
+	position: relative;
+	
+}
+.photo a:nth-of-type(1){
+	display: block;
+	width:15.6vw;
+	height:15.6vw;
+	border-radius:50%;
+	overflow: hidden;
+	border:1px solid #fff;
+	box-sizing: border-box;
+}
+.photo a:nth-of-type(1) img{
+	width:15.6vw;
+	height:15.6vw;
+}
+.photo a:nth-of-type(2){
+	display: flex;
+	width:4.68vw;
+	height:4.68vw;
+	border-radius:50%;
+	background: #ff62f6;
+	position: absolute;
+	right: 0;
+	bottom:0;
+	border:1px solid #fff;
+	justify-content: center;
+}
+.photo a:nth-of-type(2) i{
+	font-size: 2.3vw;
+	line-height: 4.6vw;
+}
+#header .renqi{
+	display: inline-block;
+	width:29.6vw;
+	height:5vw;
+	border-radius: 5vw;
+	background: linear-gradient(top,#fffcd7, #fff57d);
+	background: -webkit-linear-gradient(top,#fffcd7 ,#fff57d);
+	color: #ff5000;
+	font-size: 3.1vw;
+	line-height: 5vw;
+	text-align: center;
+}
+/*main开始*/
+#main{
+	width:100%;
+	height: 100%;
+	background: #f4f4f4;
+}
+.m-order{
+	width:100vw;
+	height:34.84vw ;
+	display: flex;
+	flex-wrap: wrap;
+	padding:0 3.9vw;
+	box-sizing: border-box;
+	background: #fff;
+	margin-bottom: 2.96vw;
+}
+.m-order div{
+	width: 100%;
+	height: 15vw;
+	display: flex;
+}
+.m-order div span{
+	display: block;
+	width: 50%;
+	height: 15vw;
+	box-sizing: border-box;
+	color: #3d4245;
+	line-height: 15vw;
+}
+.m-order div a{
+	display: inline-block;
+	width: 50%;
+	height: 15vw;
+	box-sizing: border-box;
+	text-align: right;
+	line-height: 15vw;
+	color: #aaaaaa;
+}
+.m-b-type{
+	width:100vw;
+	height:19.84vw ;
+
+}
+.m-b-type ul{
+	width:100vw;
+	height:19.84vw ;
+	display: flex;	
+	border-top: 1xp solid #ebebeb;
+	border-bottom: 1xp solid #ebebeb;
+	box-sizing: border-box;	
+}
+.m-b-type ul li{
+	width:20vw;
+	height:19.84vw;
+
+}
+.m-b-type ul li a{
+	display: inline-block;
+	font-size: 3.12vw;
+	color: #3d4245;
+	text-align: center;
+}
+.m-b-type ul li a i{
+	color: #999999;
+	font-size: 5.6vw;
+}
+.m-b-type ul li:nth-of-type(3){
+	position: relative;
+}
+.m-b-type ul li:nth-of-type(3) span:nth-of-type(2){
+	display: inline-block;
+	width:5.625vw ;
+	height: 5.625vw;
+	border-radius: 50%;
+	border:2px solid #ff5000;
+	background: #fff;
+	position:absolute;
+	top:0vw;
+	right:9vw;
+	text-align: center;
+	line-height: 5.625vw;
+	color: #ff5000;
+}
+.m-b-type ul li:nth-of-type(4){
+	position: relative;
+}
+.m-b-type ul li:nth-of-type(4) span:nth-of-type(2){
+	display: inline-block;
+	width:5.625vw ;
+	height: 5.625vw;
+	border-radius: 50%;
+	border:2px solid #ff5000;
+	background: #fff;
+	position:absolute;
+	top:0vw;
+	right:9vw;
+	text-align: center;
+	line-height: 5.625vw;
+	color: #ff5000;
+}
+/*main-tool开始*/
+.main-tool{
+	width: 100%;
+	height: 100%;
+
+	box-sizing: border-box;
+	background: #fff;
+	margin-bottom: 2.96vw;
+}	
+.tool{
+	width: 100%;
+	height: 15vw;
+	display: flex;
+	padding:0 3.9vw;	
+	box-sizing: border-box;  
+}
+.tool span{
+	display: block;
+	width: 50%;
+	height: 15vw;
+	box-sizing: border-box;
+	color: #3d4245;
+	line-height: 15vw;
+}
+.tool a{
+	display: inline-block;
+	width: 50%;
+	height: 15vw;
+	box-sizing: border-box;
+	text-align: right;
+	line-height: 15vw;
+	color: #aaaaaa;
+}
+.tools{
+	width:100%;
+	min-height: 59.3vw;
+}
+.tools ul{
+	width: 100%;
+	min-height: 59.3vw;
+	display: flex;
+	flex-wrap: wrap;
+}
+#main .tools ul li{
+	width:25vw;
+	height:30.78vw ;
+	border-right: 1xp solid #ebebeb;
+	border-bottom: 1xp solid #ebebeb;
+	display: flex;
+	justify-content: center;
+}
+.tools ul li:nth-of-type(4n+4){
+	border-right: 0px;
+}
+.tools ul li a{
+	color: #000;
+	text-align: center;
+}
+/*footer开始*/
+#footer{
+	width:100vw;
+	height:15.3vw ;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #FFF;
+	border-top: 1px solid #b3b3b3;
+}
+#footer ul{
+	width:100vw;
+	height: 15.3vw;
+	display: flex;
+	justify-content: space-around;
+}
+#footer ul li{
+	width: 20vw;
+	height: 15.3vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#footer ul li a{
+	color:#5f646e ;
+	text-align: center;
+}
